@@ -22,3 +22,12 @@ tesseract someimage.png stdout -l kor
 ```
 * install opencv 
 https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
+
+* how to run python code
+```
+python car12_ex1.py ~/Downloads/number4.jpg 11
+```
+* how to run c++ code
+```
+./run.sh
+```

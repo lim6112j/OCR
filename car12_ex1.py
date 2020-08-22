@@ -20,6 +20,7 @@ if len(sys.argv) == 2:
 
 
 ##main
+print(plt.style.available)
 plt.style.use('dark_background')
 
 img_ori = cv2.imread(sys.argv[1])
@@ -31,7 +32,7 @@ height, width, channel = img_ori.shape
 gray = cv2.cvtColor(img_ori, cv2.COLOR_BGR2GRAY)
 
 structuringElement = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-
+# plt.imshow(structuringElement)
 imgTopHat = cv2.morphologyEx(gray, cv2.MORPH_TOPHAT, structuringElement)
 imgBlackHat = cv2.morphologyEx(gray, cv2.MORPH_BLACKHAT, structuringElement)
 

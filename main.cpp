@@ -11,8 +11,8 @@ int main() {
         exit(1);
     }
     api->SetPageSegMode(tesseract::PageSegMode::PSM_SINGLE_BLOCK);
-    // image = pixRead("Arial.png");
-    image = pixRead("/Users/byeongcheollim/Downloads/number4.png");
+    image = pixRead("/Users/byeongcheollim/Documents/workspace/ocr/images/new2.png");
+    // image = pixRead("/Users/byeongcheollim/Downloads/number4.png");
     api->SetImage(image);
     outText = api->GetUTF8Text();
     printf(outText);

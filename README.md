@@ -9,6 +9,12 @@ mkdir myproject && cd myproject
 pyenv virtualenv 3.6.11 myprojectenv
 pyenv local myprojectenv // activate virtualenv
 ```
+* opencv 4 with ffmpeg (py3cv4 virtualenv enabled)
+```
+brew install ffmpeg
+```
+and just install opencv4 as [read this](https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/)
+* tkinter needs config when using pyenv . [read this](vhttps://stackoverflow.com/questions/60469202/unable-to-install-tkinter-with-pyenv-pythons-on-macos)
 * system install
 ```
 brew install tesseract
@@ -25,9 +31,18 @@ https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/
 
 * how to run python code
 ```
-python car12_ex1.py ~/Downloads/number4.jpg 11
+python ocr.py old.png 3 1
 ```
 * how to run c++ code
 ```
 ./run.sh
 ```
+
+
+
+* Best practice
+python ocr2.py ./images/bmw.jpg 5 0
+
+python ocr2.py ./images/new.jpg 3 10
+
+python ocr2.py ./images/2.jpg 5 0 
